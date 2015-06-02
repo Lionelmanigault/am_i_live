@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  studio_num: MyString
+  time_booked_start: MyString
+  time_booked_end: MyString
+  user_id: MyString
+
+two:
+  studio_num: MyString
+  time_booked_start: MyString
+  time_booked_end: MyString
+  user_id: MyString
