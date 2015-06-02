@@ -1,14 +1,32 @@
 Rails.application.routes.draw do
+  get 'film/index'
+
+  get 'film/new'
+
+  get 'contacts/new'
+
+  get 'home/index'
+
+  get 'home/howWeWork'
+
+  get 'home/help'
+
+  get 'shared/_header'
+
   get 'studio/new'
 
   get 'studio/show'
+
+  match '/contacts', to: 'contacts#new',    via: 'get'
+
+  resources "contacts", only: [:new, :create]
 
   devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+   root 'home#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
