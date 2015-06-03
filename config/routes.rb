@@ -1,14 +1,17 @@
 Rails.application.routes.draw do
-  get 'studio/new'
+  
+ 
 
-  get 'studio/show'
+  resources :studios
 
   devise_for :users
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+   root 'welcome#new'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
