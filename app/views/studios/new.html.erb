@@ -1,0 +1,19 @@
+<h1>Book a Studio</h1>
+
+<%= form_for :studio, url: new_studio_path do |f| %>
+<p>
+<%=f.label :studio_num %><br>
+<%= f.text_field :studio_num %><br>
+</p>
+<p>
+<%=f.label :time_booked_start %><br>
+<%= f.text_field :time_booked_start %><br>
+</p>
+<p>
+<%=f.label :time_booked_end %><br>
+<%= f.text_field :time_booked_end %><br>
+</p>
+<p>
+<%= f.submit %>
+</p>
+<%end%>
