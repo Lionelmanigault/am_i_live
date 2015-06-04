@@ -1,0 +1,19 @@
+<h1>Book a Studio</h1>
+
+<%= form_for @studio do |f| %>
+<p>
+<%=f.label :studio_num, 'studio number' %><br>
+<%= f.text_field :studio_num %><br>
+</p>
+<p>
+<%=f.label :time_booked_start %><br>
+<%= f.datetime_select :time_booked_start, ampm: true %><br>
+</p>
+<p>
+<%=f.label :time_booked_end %><br>
+<%= f.datetime_select :time_booked_end, ampm: true %><br>
+</p>
+<p>
+<%= f.submit %>
+</p>
+<%end%>

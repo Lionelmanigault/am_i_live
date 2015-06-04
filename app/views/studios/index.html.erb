@@ -1,0 +1,9 @@
+<h1>Studio times booked</h1>
+
+<% @studios.each do |studio| %>
+	<h3>
+		<%= studio.studio_num.capitalize %></h3>
+	<p>Start time: <%= studio.time_booked_start.strftime("%m/%d/%Y at %I:%M%p") %></p>
+	<p>End time: <%= studio.time_booked_end.strftime("%m/%d/%Y at %I:%M%p") %></p>
+	<hr>
+<% end %>
